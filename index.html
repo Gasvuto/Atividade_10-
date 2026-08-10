@@ -4,29 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <h1> Faça seu login</h1>
     </header>
-    
-    <div id="container">
-        <form method="get" action="dashboard.html">
-            <label for="email">Email:</label><br><br>
-            <input type="email" name="email" id="email" placeholder="empresa@gmail.com" required><br><br>
-    
-            <label for="senha_padrao">Senha :</label><br><br>
-            <input type="password" name="senha_padrao" id="senha_padrao" placeholder="digite sua senha"><br><br>
+    <main>
+        <div id="container">
+            <form method="get" action="dashboard.html">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="empresa@gmail.com" required>
+        
+                <label for="senha_padrao">Senha :</label>
+                <input type="password" name="senha_padrao" id="senha_padrao" placeholder="digite sua senha">
 
-            <button type="submit">LOGIN</button> 
-        </form>
-        
-        <br><a href="cadastro.html"><button> Cadastrar conta </button></a>
-        
-        <br><a href="esqueci_senha.html">Esqueci a senha </a>
-    </div>  
+                <button id="login" type="submit">LOGIN</button> 
+            </form>
+            
+            <br><a href="cadastro.html"><button> Cadastrar conta </button></a>
+            
+            <br><a href="esqueci_senha.html">Esqueci a senha </a>
+        </div>  
+    </main>
+    <footer>
+        <h5>logo</h5>
+    </footer>
    
 
 

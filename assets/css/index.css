@@ -23,9 +23,36 @@ body{
 header{
 
     background-color: var(--cor_cabecalho);
+    top: 0;
     
+}
+
+main{
+
+    display: flex;
+    justify-content: center;
 }
 
 #container{
     background-color: var(--cor_formulario);
+    display: flex;
+    height: 600px;
+    width: 450px;
+    flex-direction: column;
+    margin: 8px auto;
+ 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button#login{
+    width: 60px;
+    height: 40px;
+}
+footer{
+    width: 100%;
 }
