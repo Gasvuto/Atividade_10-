@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
     <title>Document</title>
 </head>
 <body>
@@ -30,89 +31,101 @@
     </header>
 
     <h1>Dashboard</h1>
+    <main>
 
-    <nav class="comodos">
-        <ul>
-            <li><a href="Sala">
-                <h2>Sala</h2></a>
-                <h2>Consumo de energia</h2>
-                <div class="grafico grafico-sala">
-                    <div class="aparelho_1" >
-                        <h4>aparelho 1</h4>
-                        <div class="coluna"></div>
-                    </div>  
-                    <div class="aparelho_2" >
-                        <h4>aparelho 2</h4>
-                        <div class="coluna"></div>
+        <nav id="comodos" class="comodos">
+            <ul>
+                <li id="sala"><a  href="Sala">
+                    <h2>Sala</h2></a>
+                    <div class="card_grafico">
+                        <h2>Consumo de energia</h2>
+                    
+                        <div class="grafico grafico-sala">
+                            <div class="aparelho_1" >
+                                <h4>aparelho 1</h4>
+                                <div class="coluna"></div>
+                            </div>  
+                            <div class="aparelho_2" >
+                                <h4>aparelho 2</h4>
+                                <div class="coluna"></div>
+                            </div>
+                            <div class="aparelho_3">
+                                <h4>aparelho 3</h4>
+                                <div class="coluna"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="aparelho_3">
-                        <h4>aparelho 3</h4>
-                        <div class="coluna"></div>
+                </li>
+                <li id="cozinha"><a href="Cozinha">
+                    <h2>Cozinha</h2></a>
+                    <div class="card_grafico">
+                        <h2>Consumo de energia</h2>
+                        <div class="grafico grafico-cozinha">
+                            <div class="aparelho_1" >
+                                <h4>aparelho 1</h4>
+                                <div class="coluna"></div>
+                            </div>  
+                            <div class="aparelho_2" >
+                                <h4>aparelho 2</h4>
+                                <div class="coluna"></div>
+                            </div>
+                            <div class="aparelho_3">
+                                <h4>aparelho 3</h4>
+                                <div class="coluna"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li><a href="Cozinha">
-                <h2>Cozinha</h2></a>
-                <h2>Consumo de energia</h2>
-                <div class="grafico grafico-cozinha">
-                    <div class="aparelho_1" >
-                        <h4>aparelho 1</h4>
-                        <div class="coluna"></div>
-                    </div>  
-                    <div class="aparelho_2" >
-                        <h4>aparelho 2</h4>
-                        <div class="coluna"></div>
+                </li>
+                <li id="quarto_principal"><a href="Quarto principal">
+                    <h2>Quarto principal</h2></a>
+                    <div class="card_grafico">
+                        <h2>Consumo de energia</h2>
+                        <div class="grafico grafico-quarto_principal">
+                            <div class="aparelho_1" >
+                                <h4>aparelho 1</h4>
+                                <div class="coluna"></div>
+                            </div>  
+                            <div class="aparelho_2" >
+                                <h4>aparelho 2</h4>
+                                <div class="coluna"></div>
+                            </div>
+                            <div class="aparelho_3">
+                                <h4>aparelho 3</h4>
+                                <div class="coluna"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="aparelho_3">
-                        <h4>aparelho 3</h4>
-                        <div class="coluna"></div>
+                </li>
+                <li id="outros_comodos"><a href="Outros comodos">
+                    <h2>Outros comodos</h2></a>
+                    <div class="card_grafico">
+                        <h2>Consumo de energia</h2>
+                        <div class="grafico grafico-outros_comodos">
+                            <div class="aparelho_1" >
+                                <h4>aparelho 1</h4>
+                                <div class="coluna"></div>
+                            </div>  
+                            <div class="aparelho_2" >
+                                <h4>aparelho 2</h4>
+                                <div class="coluna"></div>
+                            </div>
+                            <div class="aparelho_3">
+                                <h4>aparelho 3</h4>
+                                <div class="coluna"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li><a href="Quarto principal">
-                <h2>Quarto principal</h2></a>
-                <h2>Consumo de energia</h2>
-                <div class="grafico grafico-quarto_principal">
-                    <div class="aparelho_1" >
-                        <h4>aparelho 1</h4>
-                        <div class="coluna"></div>
-                    </div>  
-                    <div class="aparelho_2" >
-                        <h4>aparelho 2</h4>
-                        <div class="coluna"></div>
-                    </div>
-                    <div class="aparelho_3">
-                        <h4>aparelho 3</h4>
-                        <div class="coluna"></div>
-                    </div>
-                </div>
-            </li>
-            <li><a href="Outros comodos">
-                <h2>Outros comodos</h2></a>
-                <h2>Consumo de energia</h2>
-                <div class="grafico grafico-outros_comodos">
-                    <div class="aparelho_1" >
-                        <h4>aparelho 1</h4>
-                        <div class="coluna"></div>
-                    </div>  
-                    <div class="aparelho_2" >
-                        <h4>aparelho 2</h4>
-                        <div class="coluna"></div>
-                    </div>
-                    <div class="aparelho_3">
-                        <h4>aparelho 3</h4>
-                        <div class="coluna"></div>
-                    </div>
-                </div>
 
+                    
+                </li>        
                 
-            </li>        
-            
-        </ul>
-    </nav>
+            </ul>
+        </nav>
+    </main>
     <footer>
         <h4>Rodape teste</h4>
         <a href=""></a>
+
     </footer>
     
 </body>
