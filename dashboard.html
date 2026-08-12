@@ -5,38 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/dashboard.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/3f21966000.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+        
         <nav class="navbar">
-            <ul class="menu">
-                <li><a href="dashboard.html">inicio</a></li>
-                <li><a href="index.html">Logar outra conta</a></li>
-                <li class="dropdawn">
-                    <details>
-                        <summary>Comodos</summary>
-                            <li><a href="">Sala</a></li>
-                            <li><a href="">Cozinha</a></li>
-                            <li><a href="">Quarto principal</a></li>
-                            <li><a href="">Outros comodos</a></li>
-                    </details>
-
-
-                </li>
-
-
-            </ul>
-
+            <h1>Dashboard</h1>
+            <div class="bars-icon">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="dashboard.html">inicio</a></li>
+                    <li><a href="index.html">Logar outra conta</a></li>
+                    <li class="dropdawn">
+                        <details>
+                            <summary>Comodos</summary>
+                                <li><a href="">Sala</a></li>
+                                <li><a href="">Cozinha</a></li>
+                                <li><a href="">Quarto principal</a></li>
+                                <li><a href="">Outros comodos</a></li>
+                        </details>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <h1>Dashboard</h1>
+    
     <main>
 
         <nav id="comodos" class="comodos">
             <ul>
-                <li id="sala"><a  href="Sala">
-                    <h2>Sala</h2></a>
+                <li id="lugar"><a  href="Sala">
+                    <h2 class="titulo">Sala</h2></a>
                     <div class="card_grafico">
                         <h2>Consumo de energia</h2>
                     
@@ -56,8 +57,8 @@
                         </div>
                     </div>
                 </li>
-                <li id="cozinha"><a href="Cozinha">
-                    <h2>Cozinha</h2></a>
+                <li id="lugar"><a href="Cozinha">
+                    <h2 class="titulo">Cozinha</h2></a>
                     <div class="card_grafico">
                         <h2>Consumo de energia</h2>
                         <div class="grafico grafico-cozinha">
@@ -76,8 +77,8 @@
                         </div>
                     </div>
                 </li>
-                <li id="quarto_principal"><a href="Quarto principal">
-                    <h2>Quarto principal</h2></a>
+                <li id="lugar"><a href="Quarto principal">
+                    <h2 class="titulo">Quarto principal</h2></a>
                     <div class="card_grafico">
                         <h2>Consumo de energia</h2>
                         <div class="grafico grafico-quarto_principal">
@@ -96,8 +97,8 @@
                         </div>
                     </div>
                 </li>
-                <li id="outros_comodos"><a href="Outros comodos">
-                    <h2>Outros comodos</h2></a>
+                <li id="lugar"><a href="Outros comodos">
+                    <h2 class="titulo">Outros comodos</h2></a>
                     <div class="card_grafico">
                         <h2>Consumo de energia</h2>
                         <div class="grafico grafico-outros_comodos">
@@ -114,16 +115,14 @@
                                 <div class="coluna"></div>
                             </div>
                         </div>
-                    </div>
-
-                    
+                    </div>   
                 </li>        
                 
             </ul>
         </nav>
     </main>
     <footer>
-        <h4>Rodape teste</h4>
+        <h5>Rodape teste</h5>
         <a href=""></a>
 
     </footer>
