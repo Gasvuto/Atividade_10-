@@ -25,9 +25,11 @@ header{
     background-color: var(--cor_cabecalho);
 }
 
-.navbar h1 {
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
 }
 
 
@@ -40,6 +42,10 @@ header{
 }
 
 #lugar {
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(79, 161, 182);
     margin: 20px ;
     height: 350px;
@@ -48,11 +54,20 @@ header{
 }
 
 .titulo{
-    background-color: rgb(225, 240, 255);
+    margin: 5px;
+    background-color: #808080;
+    height: 30px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
 }
 
 
-
+img{
+    height: 100px;
+    width: 100px;
+}
 
 .grafico-sala{
     display: flex;
@@ -76,7 +91,12 @@ header{
 
 
 .card_grafico{
-    background-color: gray;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #dfdfe3;
     width: 230px;
     height: 303px;
     
@@ -86,17 +106,20 @@ header{
     padding: 5px;
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
 }
 
 .aparelho_2{
     padding: 5px;
     display: flex;
+    align-items: center;
     flex-direction: column-reverse;
 }
 
 .aparelho_3{
     padding: 5px;
     display: flex;
+    align-items: center;
     flex-direction: column-reverse;
 }
 
@@ -111,7 +134,7 @@ header{
     color: var(--cor_formulario);
     transition: all 0.3s ease-in-out;
     width: fit-content;
-    margin-left: auto;
+    
 }
 
 .bars-icon i {
