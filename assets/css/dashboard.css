@@ -39,15 +39,15 @@ header{
     margin-top: 100px ;
     list-style: none;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
-#lugar {
+.lugar {
     border-radius: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(79, 161, 182);
-    margin: 20px ;
     height: 350px;
     width: 250px;
     padding: 10px;
