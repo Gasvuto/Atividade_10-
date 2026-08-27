@@ -12,9 +12,9 @@ setInterval(() => {
         data = new Date();
         minutos = data.getMinutes();
         horas = data.getHours();
-
-        console.log(`Bem-vindo(a), ${nome}! Hoje é ${diasDaSemana[data.getDay()]} ${data.toLocaleDateString()} e são ${horas}:${minutos}. O fuso horário atual é ${fusohorario}.`);
+        let bem_vindo = document.getElementById('msg_benvindo');
+        bem_vindo.textContent = `Bem-vindo(a), ${nome}! Hoje é ${diasDaSemana[data.getDay()]} ${data.toLocaleDateString()} e são ${horas}:${minutos}. O fuso horário atual é ${fusohorario}.`;
     },1*1000);
     
 
-document.getElementById("msg_benvindo").innerHTML = `Bem-vindo(a), ${nome}! Hoje é ${diasDaSemana[data.getDay()]} ${data.toLocaleDateString()} e são ${horas}:${minutos}. O fuso horário atual é ${fusohorario}.`;
+
