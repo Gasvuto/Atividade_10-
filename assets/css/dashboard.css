@@ -25,6 +25,187 @@ header{
     background-color: var(--cor_cabecalho);
 }
 
+body,
+header,
+.lugar,
+.card_grafico,
+.titulo,
+#campoBusca,
+#themeToggle {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar {
+    padding: 10px 20px;
+    gap: 15px;
+}
+ 
+.navbar img {
+    height: 55px;
+    width: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+}
+ 
+.navbar img:hover {
+    transform: scale(1.06);
+}
+ 
+.navbar h1 {
+    flex: 1;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+}
+
+
+
+#campoBusca {
+    display: block;
+    margin: 30px auto 0;
+    padding: 10px 16px;
+    width: 280px;
+    max-width: 90%;
+    border: none;
+    border-radius: 18px;
+    font-size: 1em;
+    outline: none;
+}
+
+.escondido {
+    display: none !important;
+}
+
+.secao_tabela {
+    max-width: 900px;
+    margin: 30px auto 0;
+    padding: 0 10px;
+}
+
+.secao_tabela h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#tabelaAcessos {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #dfdfe3;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#tabelaAcessos th,
+#tabelaAcessos td {
+    padding: 10px 14px;
+    text-align: left;
+}
+
+#tabelaAcessos thead {
+    background-color: #808080;
+    color: #fff;
+}
+
+#tabelaAcessos tbody tr {
+    border-bottom: 1px solid #c4c4c8;
+    transition: background-color 0.2s ease;
+}
+
+#tabelaAcessos tbody tr:hover {
+    background-color: #c9dbe6;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.status.online {
+    background-color: #2e8b57;
+}
+
+.status.offline {
+    background-color: #a3392b;
+}
+
+
+#themeToggle {
+    background-color: var(--cor_formulario);
+    color: var(--cor_cabecalho);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#themeToggle:hover {
+    opacity: 0.85;
+}
+
+
+
+header h1,
+#msg_benvindo {
+    color: #fff;
+}
+
+
+
+body.dark-theme {
+    --cor_fundo: #001227;
+    --cor_cabecalho: #0f243a;
+    --cor_formulario: #344755;
+}
+
+body.dark-theme .lugar {
+    background-color: #24303a;
+}
+
+body.dark-theme .card_grafico {
+    background-color: #1b232b;
+    color: #e6e6e6;
+}
+
+body.dark-theme .titulo {
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+body.dark-theme #campoBusca {
+    background-color: #1b232b;
+    color: #e6e6e6;
+}
+
+body.dark-theme #themeToggle {
+    background-color: #e6e6e6;
+    color: #12181f;
+}
+
+body.dark-theme #tabelaAcessos {
+    background-color: #1b232b;
+    color: #e6e6e6;
+}
+
+body.dark-theme #tabelaAcessos thead {
+    background-color: #3a3a3a;
+}
+
+body.dark-theme #tabelaAcessos tbody tr {
+    border-bottom: 1px solid #2a343d;
+}
+
+body.dark-theme #tabelaAcessos tbody tr:hover {
+    background-color: #2a3742;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;

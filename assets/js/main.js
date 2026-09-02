@@ -18,3 +18,21 @@ setInterval(() => {
     
 
 
+const campoBusca = document.getElementById('campoBusca');
+const tabelaAcessos = document.querySelectorAll('#tabelaAcessos tbody tr');
+campoBusca.addEventListener('input', function() {
+    const termoBusca = campoBusca.value.toLowerCase();
+    tabelaAcessos.forEach(function(linha) {{
+        const testoLinha = linha.textContent.toLowerCase();
+        if (testoLinha.includes(termoBusca)) {
+            linha.style.display = '';
+        } else {
+            linha.style.display = 'none';
+        }
+    }
+    });
+})
+
+document.getElementById('themeToggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+});

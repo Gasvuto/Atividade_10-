@@ -13,6 +13,7 @@
         <nav class="navbar">
             <img src="assets/img/Sem nome (200 x 200 px).png" alt="Logo">
             <h1>Dashboard</h1>
+            <button id="themeToggle" type="button">Dark Mode</button>
             <div class="bars-icon">
                 <i class="fa-solid fa-bars"></i>
                 <ul class="menu">
@@ -35,6 +36,61 @@
     <main>
 
         <div id="msg_benvindo" ></div>
+
+        <input type="text" id="campoBusca" placeholder="Buscar por nome, data, hora ou status">
+
+        <section class="secao_tabela">
+            <h2>Histórico de Acessos</h2>
+            <table id="tabelaAcessos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Data de acesso</th>
+                        <th>Hora do acesso</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ar-condicionado Sala</td>
+                        <td>01/09/2026</td>
+                        <td>08:15</td>
+                        <td><span class="status online">Online</span></td>
+                    </tr>
+                    <tr>
+                        <td>Geladeira Cozinha</td>
+                        <td>01/09/2026</td>
+                        <td>07:40</td>
+                        <td><span class="status online">Online</span></td>
+                    </tr>
+                    <tr>
+                        <td>TV Sala</td>
+                        <td>31/08/2026</td>
+                        <td>21:05</td>
+                        <td><span class="status offline">Offline</span></td>
+                    </tr>
+                    <tr>
+                        <td>Luminária Quarto</td>
+                        <td>01/09/2026</td>
+                        <td>06:50</td>
+                        <td><span class="status online">Online</span></td>
+                    </tr>
+                    <tr>
+                        <td>Micro-ondas Cozinha</td>
+                        <td>30/08/2026</td>
+                        <td>12:30</td>
+                        <td><span class="status offline">Offline</span></td>
+                    </tr>
+                    <tr>
+                        <td>Ventilador Quarto</td>
+                        <td>01/09/2026</td>
+                        <td>05:20</td>
+                        <td><span class="status online">Online</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
 
 
         <nav id="comodos" class="comodos">
@@ -123,12 +179,18 @@
                 
             </ul>
         </nav>
+
+
+
+
+
     </main>
     <footer>
         <h5>Rodape teste</h5>
         <a href=""></a>
 
     </footer>
+
 
     <script src="assets/js/main.js"></script>
     
