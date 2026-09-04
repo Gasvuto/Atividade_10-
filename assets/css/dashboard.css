@@ -324,8 +324,8 @@ img{
 
 .menu{
     font-size: 1.5em;
-    visibility: hidden;
-    opacity: 0;
+    /* visibility: hidden; */
+    /* opacity: 0; */
     position: absolute;
     right: 10px;
     width: 150px;
@@ -337,13 +337,13 @@ img{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    transition: all 0.3s ease-in;
+    /* transition: all 0.3s ease-in; */
 }
 
-.bars-icon:hover .menu{
+/* .bars-icon:hover .menu{
     visibility: visible;
     opacity: 1;
-}
+} */
 
 h4{
     position: relative;
