@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/esqueci_senha.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/3f21966000.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
 </head>
 <body>
-    <form method="get" action="index.html">
-        <label for="senha">Senha:</label><br><br>
-        <input minlength="8" type="password" name="senha" id="senha" placeholder="Digite sua senha..." required><br><br>
-  
-        <label for="senha_padrao">Confirme sua senha :</label><br><br>
-        <input minlength="8" type="password" name="senha_padrao" id="senha_padrao" placeholder="Digite novamente sua senha..."required><br><br>
+    <header>
+        <nav class="navbar">
+            <img src="assets/img/Sem nome (200 x 200 px).png" alt="Logo">
+            <h1>Esqueci minha senha</h1>
+            <button id="themeToggle" type="button">Dark Mode</button>
+            <div class="bars-icon">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="index.html">Login</a></li>
+                    <li><a href="cadastro.html">Criar conta</a></li>
+                    <li><a href="esqueci_senha.html">Esqueci minha senha</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <button type="submit">LOGIN</button> 
-    </form>
+    <main>
+        <div id="container">
+            <form method="get" action="index.html">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Enter..." required>
+
+                <label for="senha">Nova senha</label>
+                <input minlength="8" type="password" name="senha" id="senha" placeholder="Enter..." required>
+
+                <label for="senha_padrao">Confirme sua nova senha</label>
+                <input minlength="8" type="password" name="senha_padrao" id="senha_padrao" placeholder="Enter..." required>
+
+                <button id="redefinir" type="submit">Redefinir senha</button>
+            </form>
+
+            <div class="links_extra">
+                <a href="index.html">Voltar para o login</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5>Smart Control</h5>
+    </footer>
+
+    <script src="assets/js/esqueci_senha.js"></script>
+</body>
+</html>

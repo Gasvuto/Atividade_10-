@@ -23,16 +23,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
- 
-
-    
 
 
-header{
-
+header {
     background-color: var(--cor_cabecalho);
     top: 0;
-    
 }
 
 .navbar {
@@ -120,10 +115,12 @@ header{
     text-decoration: underline;
 }
 
-main{
-
+main {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 40px 20px;
 }
 
 #container {
@@ -167,10 +164,11 @@ form input:focus {
     box-shadow: 0 0 0 2px var(--cor_cabecalho);
 }
 
-button#login {
+button#redefinir {
     align-self: center;
     margin-top: 22px;
-    width: 140px;
+    padding: 0 22px;
+    width: auto;
     height: 42px;
     background-color: var(--cor_botao);
     color: #fff;
@@ -182,7 +180,7 @@ button#login {
     transition: background-color 0.2s ease;
 }
 
-button#login:hover {
+button#redefinir:hover {
     background-color: var(--cor_botao_hover);
 }
 
@@ -203,13 +201,13 @@ button#login:hover {
 .links_extra a:hover {
     text-decoration: underline;
 }
+
 footer {
     width: 100%;
     text-align: center;
     padding: 12px;
     color: #dfe9f0;
 }
-
 
 body.dark-theme {
     --cor_fundo: #001227;

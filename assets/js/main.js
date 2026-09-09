@@ -41,3 +41,4 @@ document.getElementById('themeToggle').addEventListener('click', () => {
 $(".bars-icon").on("click", function() {
     $(".menu").fadeToggle(100, "linear");
 });
+
