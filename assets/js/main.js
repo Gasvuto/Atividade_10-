@@ -38,7 +38,7 @@ document.getElementById('themeToggle').addEventListener('click', () => {
 });
 
 
-$(".bars-icon").on("click", function() {
+$(document).on("click", ".bars-icon", function() {
     $(".menu").fadeToggle(100, "linear");
 });
 

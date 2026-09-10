@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/comodo.css">
+    <title>Cômodo</title>
+    <script src="https://kit.fontawesome.com/3f21966000.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="assets/img/Sem nome (200 x 200 px).png" alt="Logo">
+            <h1>Dashboard</h1>
+
+            <div class="sala-select-wrapper">
+                <select id="salaSelect">
+                    <option value="Sala">Sala</option>
+                    <option value="Cozinha">Cozinha</option>
+                    <option value="Quarto principal">Quarto principal</option>
+                    <option value="Outros comodos">Outros cômodos</option>
+                </select>
+            </div>
+
+            <button id="themeToggle" type="button">Dark Mode</button>
+
+            <div class="bars-icon">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="dashboard.html">Início</a></li>
+                    <li><a href="index.html">Logar outra conta</a></li>
+                    <li class="dropdawn">
+                        <details>
+                            <summary>Comodos</summary>
+                            <ul class="submenu">
+                                <li><a href="comodo.html?comodo=Sala">Sala</a></li>
+                                <li><a href="comodo.html?comodo=Cozinha">Cozinha</a></li>
+                                <li><a href="comodo.html?comodo=Quarto%20principal">Quarto principal</a></li>
+                                <li><a href="comodo.html?comodo=Outros%20comodos">Outros cômodos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <section class="aparelhos-painel">
+                <h2>Aparelhos do Cômodo</h2>
+                <div id="listaAparelhos" class="lista-aparelhos"></div>
+            </section>
+
+            <section class="dados-painel">
+                <h2 id="tituloDados">Dados de Uso</h2>
+                <div class="graficos">
+                    <div class="grafico-card">
+                        <span class="grafico-legenda">Consumo de energia</span>
+                        <canvas id="graficoPizza"></canvas>
+                    </div>
+                    <div class="grafico-card">
+                        <span class="grafico-legenda">Consumo de energia</span>
+                        <canvas id="graficoSemanas"></canvas>
+                    </div>
+                    <div class="grafico-card">
+                        <span class="grafico-legenda">Horário de pico de uso</span>
+                        <canvas id="graficoPico"></canvas>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <h5>Smart Control</h5>
+    </footer>
+
+    <script src="assets/js/comodo.js"></script>
+</body>
+</html>
