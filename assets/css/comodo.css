@@ -211,7 +211,17 @@ main {
     outline: 2px solid #fff;
 }
 
-/* Gráficos */
+.lista-vazia {
+    grid-column: 1 / -1;
+    color: #1A3342;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+body.dark-theme .lista-vazia {
+    color: #e6e6e6;
+}
 .graficos {
     display: flex;
     gap: 14px;

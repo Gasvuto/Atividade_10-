@@ -1,45 +1,4 @@
-const APARELHOS_POR_COMODO = {
-    "Sala": [
-        "Smart TV Samsung",
-        "Robô aspirador de pó",
-        "Ar condicionado Electrolux",
-        "Persiana elétrica motorizada",
-        "Lâmpada smart inteligente",
-        "Interruptor inteligente",
-        "Controle remoto inteligente",
-        "Poltrona elétrica reclinável"
-    ],
-    "Cozinha": [
-        "Geladeira inteligente",
-        "Micro-ondas smart",
-        "Cafeteira inteligente",
-        "Exaustor inteligente",
-        "Fogão smart",
-        "Lâmpada smart inteligente",
-        "Interruptor inteligente",
-        "Tomada inteligente"
-    ],
-    "Quarto principal": [
-        "Ar condicionado smart",
-        "Luminária inteligente",
-        "Ventilador smart",
-        "Cortina elétrica motorizada",
-        "Smart TV",
-        "Umidificador inteligente",
-        "Interruptor inteligente",
-        "Tomada inteligente"
-    ],
-    "Outros comodos": [
-        "Ventilador smart",
-        "Aquecedor inteligente",
-        "Câmera de segurança",
-        "Sensor de presença",
-        "Fechadura inteligente",
-        "Sirene inteligente",
-        "Interruptor inteligente",
-        "Tomada inteligente"
-    ]
-};
+
 
 function gerarDadosAparelho(nomeAparelho) {
     return {
@@ -80,7 +39,8 @@ const tituloDados = document.getElementById('tituloDados');
 function getComodoInicial() {
     const params = new URLSearchParams(window.location.search);
     const comodo = params.get('comodo');
-    if (comodo && APARELHOS_POR_COMODO[comodo]) {
+    const dispositivos = carregarDispositivos();
+    if (comodo && dispositivos[comodo]) {
         return comodo;
     }
     return "Sala";
@@ -88,18 +48,25 @@ function getComodoInicial() {
 
 function renderizarAparelhos(comodo) {
     listaAparelhos.innerHTML = '';
-    const aparelhos = APARELHOS_POR_COMODO[comodo];
+    const dispositivos = carregarDispositivos();
+    const aparelhos = dispositivos[comodo] || [];
 
-    aparelhos.forEach((nome, index) => {
+    if (aparelhos.length === 0) {
+        listaAparelhos.innerHTML = '<p class="lista-vazia">Nenhum dispositivo cadastrado neste cômodo ainda.</p>';
+        tituloDados.textContent = 'Dados de Uso';
+        return;
+    }
+
+    aparelhos.forEach((dispositivo, index) => {
         const botao = document.createElement('button');
         botao.type = 'button';
         botao.className = 'aparelho-item';
-        botao.textContent = nome;
-        botao.addEventListener('click', () => selecionarAparelho(nome, botao));
+        botao.textContent = dispositivo.nome;
+        botao.addEventListener('click', () => selecionarAparelho(dispositivo.nome, botao));
         listaAparelhos.appendChild(botao);
 
         if (index === 0) {
-            selecionarAparelho(nome, botao);
+            selecionarAparelho(dispositivo.nome, botao);
         }
     });
 }

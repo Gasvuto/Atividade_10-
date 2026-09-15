@@ -4,35 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/dashboard.css">
-    <title>Document</title>
+    <title>Dashboard</title>
     <script src="https://kit.fontawesome.com/3f21966000.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
 </head>
 <body>
     <header>
-        
         <nav class="navbar">
             <img src="assets/img/Sem nome (200 x 200 px).png" alt="Logo">
             <h1>Dashboard</h1>
             <button id="themeToggle" type="button">Dark Mode</button>
             <div class="bars-icon">
                 <i class="fa-solid fa-bars"></i>
-            </div>
-            <ul class="menu">
-                    <li><a href="dashboard.html">inicio</a></li>
+                <ul class="menu">
+                    <li><a href="dashboard.html">Início</a></li>
+                    <li><a href="gerenciar_dispositivos.html">Gerenciar Dispositivos</a></li>
                     <li><a href="index.html">Logar outra conta</a></li>
                     <li class="dropdawn">
                         <details>
                             <summary>Comodos</summary>
                             <ul class="submenu">
-                                <li><a href="">Sala</a></li>
-                                <li><a href="">Cozinha</a></li>
-                                <li><a href="">Quarto principal</a></li>
-                                <li><a href="">Outros comodos</a></li>
+                                <li><a href="comodo.html?comodo=Sala">Sala</a></li>
+                                <li><a href="comodo.html?comodo=Cozinha">Cozinha</a></li>
+                                <li><a href="comodo.html?comodo=Quarto%20principal">Quarto principal</a></li>
+                                <li><a href="comodo.html?comodo=Outros%20comodos">Outros cômodos</a></li>
                             </ul>
                         </details>
                     </li>
                 </ul>
+            </div>
         </nav>
     </header>
 
@@ -98,7 +98,7 @@
 
         <nav id="comodos" class="comodos">
             <ul>
-                <li class="lugar"><a  href="Sala">
+                <li class="lugar"><a href="comodo.html?comodo=Sala">
                     <h2 class="titulo">Sala</h2></a>
                     <div class="card_grafico">
                         <h2>Consumo de energia</h2>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="lugar"><a href="Cozinha">
+                <li class="lugar"><a href="comodo.html?comodo=Cozinha">
                     <h2 class="titulo">Cozinha</h2></a>
                     <div class="card_grafico">
                         <h2>Consumo de energia</h2>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="lugar"><a href="Quarto principal">
+                <li class="lugar"><a href="comodo.html?comodo=Quarto%20principal">
                     <h2 class="titulo">Quarto principal</h2></a>
                     <div class="card_grafico">
                         <h2>Consumo de energia</h2>
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="lugar"><a href="Outros comodos">
+                <li class="lugar"><a href="comodo.html?comodo=Outros%20comodos">
                     <h2 class="titulo">Outros comodos</h2></a>
                     <div class="card_grafico">
                         <h2>Consumo de energia</h2>
@@ -190,7 +190,7 @@
     </main>
     <footer>
         <h5>Rodape teste</h5>
-        <a href=""></a>
+        
 
     </footer>
 
