@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/gerenciar_dispositivos.css">
+    <title>Gerenciar Dispositivos</title>
+    <script src="https://kit.fontawesome.com/3f21966000.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="assets/img/Sem nome (200 x 200 px).png" alt="Logo">
+            <h1>Gerenciar Dispositivos</h1>
+            <button id="themeToggle" type="button">Dark Mode</button>
+            <div class="bars-icon">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="dashboard.html">Início</a></li>
+                    <li><a href="gerenciar_dispositivos.html">Gerenciar Dispositivos</a></li>
+                    <li><a href="index.html">Logar outra conta</a></li>
+                    <li class="dropdawn">
+                        <details>
+                            <summary>Comodos</summary>
+                            <ul class="submenu">
+                                <li><a href="comodo.html?comodo=Sala">Sala</a></li>
+                                <li><a href="comodo.html?comodo=Cozinha">Cozinha</a></li>
+                                <li><a href="comodo.html?comodo=Quarto%20principal">Quarto principal</a></li>
+                                <li><a href="comodo.html?comodo=Outros%20comodos">Outros cômodos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <p class="pergunta">Deseja adicionar ou remover dispositivo?</p>
+
+            <a class="opcao opcao-adicionar" href="cadastrar_dispositivo.html">Cadastrar<br>dispositivo</a>
+            <a class="opcao opcao-remover" href="remover_dispositivo.html">Remover<br>dispositivo</a>
+        </div>
+    </main>
+
+    <footer>
+        <h5>Smart Control</h5>
+    </footer>
+
+    <script src="assets/js/gerenciar_dispositivos.js"></script>
+</body>
+</html>

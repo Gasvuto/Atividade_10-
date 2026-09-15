@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/dispositivos_form.css">
+    <title>Cadastrar Dispositivo</title>
+    <script src="https://kit.fontawesome.com/3f21966000.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="assets/img/Sem nome (200 x 200 px).png" alt="Logo">
+            <h1>Cadastrar Dispositivo</h1>
+            <button id="themeToggle" type="button">Dark Mode</button>
+            <div class="bars-icon">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="dashboard.html">Início</a></li>
+                    <li><a href="gerenciar_dispositivos.html">Gerenciar Dispositivos</a></li>
+                    <li><a href="index.html">Logar outra conta</a></li>
+                    <li class="dropdawn">
+                        <details>
+                            <summary>Comodos</summary>
+                            <ul class="submenu">
+                                <li><a href="comodo.html?comodo=Sala">Sala</a></li>
+                                <li><a href="comodo.html?comodo=Cozinha">Cozinha</a></li>
+                                <li><a href="comodo.html?comodo=Quarto%20principal">Quarto principal</a></li>
+                                <li><a href="comodo.html?comodo=Outros%20comodos">Outros cômodos</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container">
+            <h2>Cadastrar novo dispositivo</h2>
+
+            <form id="formCadastro">
+                <label for="nome">Nome do dispositivo</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Ar condicionado LG" required>
+
+                <label for="comodo">Cômodo</label>
+                <select id="comodo" name="comodo" required>
+                    <option value="Sala">Sala</option>
+                    <option value="Cozinha">Cozinha</option>
+                    <option value="Quarto principal">Quarto principal</option>
+                    <option value="Outros comodos">Outros cômodos</option>
+                </select>
+
+                <button id="cadastrar" type="submit">Cadastrar dispositivo</button>
+            </form>
+
+            <p id="mensagem" class="mensagem-sucesso"></p>
+
+            <div class="links_extra">
+                <a href="gerenciar_dispositivos.html">Voltar</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5>Smart Control</h5>
+    </footer>
+
+    <script src="assets/js/dispositivos.js"></script>
+    <script src="assets/js/cadastrar_dispositivo.js"></script>
+</body>
+</html>
